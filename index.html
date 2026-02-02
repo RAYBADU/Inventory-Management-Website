@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Inventory Management Website</title>
+  </head>
+  <body class="flex">
+    <!-- sidebar -->
+    <aside
+      class="fixed bg-black/90 text-white w-60 h-screen px-4 py-5   relative max-md:w-50"
+    >
+      <h1 class="text-xl max-md:text-lg font-semibold font-[poppins]">
+        <span class="mr-4"><i class="fa-solid fa-box-archive"></i></span
+        >InventoryPro
+      </h1>
+      <hr class="mt-4 w-full" />
+
+      <ul class="mt-8 space-y-4">
+        <li
+          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+        >
+          <a href="#">
+            <span class="mr-3"><i class="fa-solid fa-grip"></i></span
+            >Dashboard</a
+          >
+        </li>
+
+        <li
+          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+        >
+          <a href="#">
+            <span class="mr-3"><i class="fa-solid fa-box-open"></i></span
+            >Products</a
+          >
+        </li>
+        <li
+          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+        >
+          <a href="#">
+            <span class="mr-3"><i class="fa-solid fa-cart-shopping"></i></span
+            >Orders</a
+          >
+        </li>
+        <li
+          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+        >
+          <a href="#">
+            <span class="mr-3"><i class="fa-solid fa-users"></i></span
+            >Suppliers</a
+          >
+        </li>
+        <li
+          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+        >
+          <a href="#">
+            <span class="mr-3"><i class="fa-solid fa-chart-line"></i></span
+            >Reports</a
+          >
+        </li>
+        <li
+          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+        >
+          <a href="#">
+            <span class="mr-3"><i class="fa-solid fa-file"></i></span
+            >Documents</a
+          >
+        </li>
+
+        <!-- <div class="absolute bottom-5">
+          <ul>
+            <li
+              class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+            >
+              <a href="#">
+                <span class="mr-3"><i class="fa-regular fa-bell"></i></span
+                >Notifications</a
+              >
+            </li>
+            <li
+              class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
+            >
+              <a href="#">
+                <span class="mr-3"><i class="fa-solid fa-gear"></i></span
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </div> -->
+      </ul>
+    </aside>
+    <!-- end of sidebar -->
+
+    <main class=" top-0 left-60 max-md:left-50 right-0 px-6 py-4 bg-white">
+      <div class="flex justify-between items-center">
+        <!-- input box -->
+        <input
+          type="text"
+          class="px-4 py-2 rounded-lg w-90 bg-gray-100 outline-0"
+          placeholder="Search Inventory..."
+        />
+
+        <!-- notification and user id -->
+        <div class="flex items-center space-x-4">
+          <i class="fa-regular fa-bell text-xl cursor-pointer"></i>
+
+          <div class="flex items-center space-x-2">
+            <img src="user.jpg" alt="" class="w-12 rounded-full" />
+            <div>
+              <p class="font-semibold font-[poppins]">Raymond</p>
+              <p class="text-gray-500">Admin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- text starts from here -->
+
+      <h1 class="mt-8 font-bold text-4xl max-md:text-2xl font-[poppins]">
+        Dashboard
+      </h1>
+      <p class="mt-4 text-gray-500">
+        Welcome back! Here what's happening with your inventory today.
+      </p>
+
+      <!-- statistics divs -->
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <div
+          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
+        >
+          <div class="flex items-center justify-between">
+            <p class="text-lg font-semibold">Total Products</p>
+            <i class="fa-solid fa-box-open text-lg"></i>
+          </div>
+          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">2,847</h2>
+          <p class="text-gray-500 mt-4 max-md:text-sm">
+            <span class="text-green-500">+12.5% </span>from last month
+          </p>
+        </div>
+        <div
+          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
+        >
+          <div class="flex items-center justify-between">
+            <p class="text-lg font-semibold">Low Stock Items</p>
+            <i class="fa-solid fa-triangle-exclamation text-red-500"></i>
+          </div>
+          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">23</h2>
+          <p class="text-gray-500 mt-4 max-md:text-sm">
+            <span class="text-red-600">-4.3% </span>from last month
+          </p>
+        </div>
+        <div
+          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
+        >
+          <div class="flex items-center justify-between">
+            <p class="text-lg font-semibold">Out Of Stock</p>
+            <i class="fa-solid fa-arrow-trend-down text-yellow-400"></i>
+          </div>
+          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">8</h2>
+          <p class="text-gray-500 mt-4 max-md:text-sm">
+            <span class="text-green-500">+2.9% </span>from last month
+          </p>
+        </div>
+        <div
+          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
+        >
+          <div class="flex items-center justify-between">
+            <p class="text-lg font-semibold">Total Value</p>
+            <i class="fa-solid fa-arrow-trend-up text-green-400"></i>
+          </div>
+          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">$184,290</h2>
+          <p class="text-gray-500 mt-4 max-md:text-sm">
+            <span class="text-green-500">+18.2% </span>from last month
+          </p>
+        </div>
+      </div>
+
+      <!-- Table -->
+
+      <p class="mt-8 font-semibold text-xl">Inventory List</p>
+      <p class="text-gray-500">Manage your product and stock levels</p>
+
+      <table
+        class="min-w-full border border-gray-300 rounded-lg overflow-hidden mt-8"
+      >
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
+              Product Name
+            </th>
+            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
+              Category
+            </th>
+            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
+              Quantity
+            </th>
+            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
+              Price
+            </th>
+          </tr>
+        </thead>
+
+        <tbody class="bg-white">
+          <tr class="hover:bg-gray-50">
+            <td class="border px-6 py-3">Television</td>
+            <td class="border px-6 py-3">Electronics</td>
+            <td class="border px-6 py-3">4</td>
+            <td class="border px-6 py-3">$456.00</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="border px-6 py-3">USB-C Cable</td>
+            <td class="border px-6 py-3">Accessories</td>
+            <td class="border px-6 py-3">8</td>
+            <td class="border px-6 py-3">$12.99</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="border px-6 py-3">Gaming Chair</td>
+            <td class="border px-6 py-3">Furniture</td>
+            <td class="border px-6 py-3">67</td>
+            <td class="border px-6 py-3">$49.99</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="border px-6 py-3">Monitor 65"</td>
+            <td class="border px-6 py-3">Electronics</td>
+            <td class="border px-6 py-3">5</td>
+            <td class="border px-6 py-3">$33.45</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
