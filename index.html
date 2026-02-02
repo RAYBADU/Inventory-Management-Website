@@ -3,239 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
 
     <title>Inventory Management Website</title>
   </head>
-  <body class="flex">
-    <!-- sidebar -->
-    <aside
-      class="fixed bg-black/90 text-white w-60 h-screen px-4 py-5   relative max-md:w-50"
-    >
-      <h1 class="text-xl max-md:text-lg font-semibold font-[poppins]">
-        <span class="mr-4"><i class="fa-solid fa-box-archive"></i></span
-        >InventoryPro
-      </h1>
-      <hr class="mt-4 w-full" />
 
-      <ul class="mt-8 space-y-4">
-        <li
-          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-        >
-          <a href="#">
-            <span class="mr-3"><i class="fa-solid fa-grip"></i></span
-            >Dashboard</a
-          >
-        </li>
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
+      <hr />
 
-        <li
-          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-        >
-          <a href="#">
-            <span class="mr-3"><i class="fa-solid fa-box-open"></i></span
-            >Products</a
-          >
-        </li>
-        <li
-          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-        >
-          <a href="#">
-            <span class="mr-3"><i class="fa-solid fa-cart-shopping"></i></span
-            >Orders</a
-          >
-        </li>
-        <li
-          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-        >
-          <a href="#">
-            <span class="mr-3"><i class="fa-solid fa-users"></i></span
-            >Suppliers</a
-          >
-        </li>
-        <li
-          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-        >
-          <a href="#">
-            <span class="mr-3"><i class="fa-solid fa-chart-line"></i></span
-            >Reports</a
-          >
-        </li>
-        <li
-          class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-        >
-          <a href="#">
-            <span class="mr-3"><i class="fa-solid fa-file"></i></span
-            >Documents</a
-          >
-        </li>
-
-        <!-- <div class="absolute bottom-5">
-          <ul>
-            <li
-              class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-            >
-              <a href="#">
-                <span class="mr-3"><i class="fa-regular fa-bell"></i></span
-                >Notifications</a
-              >
-            </li>
-            <li
-              class="p-2 font-semibold hover:bg-gray-200 text-lg max-md:text-sm rounded-md"
-            >
-              <a href="#">
-                <span class="mr-3"><i class="fa-solid fa-gear"></i></span
-                >Settings</a
-              >
-            </li>
-          </ul>
-        </div> -->
+      <ul>
+        <li><i class="fa-solid fa-grip"></i>Dashboard</li>
+        <li><i class="fa-solid fa-box-open"></i>Products</li>
+        <li><i class="fa-solid fa-cart-shopping"></i>Orders</li>
+        <li><i class="fa-solid fa-users"></i>Suppliers</li>
+        <li><i class="fa-solid fa-chart-line"></i>Reports</li>
+        <li><i class="fa-solid fa-file"></i>Documents</li>
       </ul>
     </aside>
-    <!-- end of sidebar -->
 
-    <main class=" top-0 left-60 max-md:left-50 right-0 px-6 py-4 bg-white">
-      <div class="flex justify-between items-center">
-        <!-- input box -->
-        <input
-          type="text"
-          class="px-4 py-2 rounded-lg w-90 bg-gray-100 outline-0"
-          placeholder="Search Inventory..."
-        />
+    <!-- MAIN -->
+    <main class="main">
+      <!-- MOBILE NAV -->
+      <nav class="mobile-nav">
+        <h2><i class="fa-solid fa-box-archive"></i> InventoryPro</h2>
+      </nav>
 
-        <!-- notification and user id -->
-        <div class="flex items-center space-x-4">
-          <i class="fa-regular fa-bell text-xl cursor-pointer"></i>
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <input class="search" placeholder="Search Inventory..." />
 
-          <div class="flex items-center space-x-2">
-            <img src="user.jpg" alt="" class="w-12 rounded-full" />
-            <div>
-              <p class="font-semibold font-[poppins]">Raymond</p>
-              <p class="text-gray-500">Admin</p>
-            </div>
+        <div class="user">
+          <i class="fa-regular fa-bell"></i>
+          <img src="user.jpg" />
+          <div>
+            <strong>Raymond</strong>
+            <p style="font-size: 0.85rem; color: gray">Admin</p>
           </div>
         </div>
       </div>
 
-      <!-- text starts from here -->
-
-      <h1 class="mt-8 font-bold text-4xl max-md:text-2xl font-[poppins]">
-        Dashboard
-      </h1>
-      <p class="mt-4 text-gray-500">
-        Welcome back! Here what's happening with your inventory today.
+      <h1 class="title">Dashboard</h1>
+      <p class="subtitle">
+        Welcome back! Here what is happening with your inventory today.
       </p>
 
-      <!-- statistics divs -->
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-        <div
-          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
-        >
-          <div class="flex items-center justify-between">
-            <p class="text-lg font-semibold">Total Products</p>
-            <i class="fa-solid fa-box-open text-lg"></i>
+      <!-- STATS -->
+      <section class="stats">
+        <div class="card">
+          <div class="card-header">
+            <p>Total Products</p>
+            <i class="fa-solid fa-box-open"></i>
           </div>
-          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">2,847</h2>
-          <p class="text-gray-500 mt-4 max-md:text-sm">
-            <span class="text-green-500">+12.5% </span>from last month
-          </p>
+          <h2>2,847</h2>
+          <p><span class="green">+12.5%</span> from last month</p>
         </div>
-        <div
-          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
-        >
-          <div class="flex items-center justify-between">
-            <p class="text-lg font-semibold">Low Stock Items</p>
-            <i class="fa-solid fa-triangle-exclamation text-red-500"></i>
+
+        <div class="card">
+          <div class="card-header">
+            <p>Low Stock</p>
+            <i class="fa-solid fa-triangle-exclamation red"></i>
           </div>
-          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">23</h2>
-          <p class="text-gray-500 mt-4 max-md:text-sm">
-            <span class="text-red-600">-4.3% </span>from last month
-          </p>
+          <h2>23</h2>
+          <p><span class="red">-4.3%</span> from last month</p>
         </div>
-        <div
-          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
-        >
-          <div class="flex items-center justify-between">
-            <p class="text-lg font-semibold">Out Of Stock</p>
-            <i class="fa-solid fa-arrow-trend-down text-yellow-400"></i>
+
+        <div class="card">
+          <div class="card-header">
+            <p>Out of Stock</p>
+            <i class="fa-solid fa-arrow-trend-down yellow"></i>
           </div>
-          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">8</h2>
-          <p class="text-gray-500 mt-4 max-md:text-sm">
-            <span class="text-green-500">+2.9% </span>from last month
-          </p>
+          <h2>8</h2>
+          <p><span class="green">+2.9%</span> from last month</p>
         </div>
-        <div
-          class="border border-gray-200 shadow-lg w-80 max-md:w-full px-4 py-5 rounded-lg cursor-pointer hover:scale-[1.04] transition-all duration-300"
-        >
-          <div class="flex items-center justify-between">
-            <p class="text-lg font-semibold">Total Value</p>
-            <i class="fa-solid fa-arrow-trend-up text-green-400"></i>
+
+        <div class="card">
+          <div class="card-header">
+            <p>Total Value</p>
+            <i class="fa-solid fa-arrow-trend-up green"></i>
           </div>
-          <h2 class="text-2xl max-md:text-xl font-semibold mt-4">$184,290</h2>
-          <p class="text-gray-500 mt-4 max-md:text-sm">
-            <span class="text-green-500">+18.2% </span>from last month
-          </p>
+          <h2>$184,290</h2>
+          <p><span class="green">+18.2%</span> from last month</p>
         </div>
-      </div>
+      </section>
 
-      <!-- Table -->
+      <!-- TABLE -->
+      <section class="table-section">
+        <h2>Inventory List</h2>
+        <p class="subtitle">Manage your product and stock levels</p>
 
-      <p class="mt-8 font-semibold text-xl">Inventory List</p>
-      <p class="text-gray-500">Manage your product and stock levels</p>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Qty</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Television</td>
+                <td>Electronics</td>
+                <td>4</td>
+                <td>$456.00</td>
+              </tr>
+              <tr>
+                <td>USB-C Cable</td>
+                <td>Accessories</td>
+                <td>8</td>
+                <td>$12.99</td>
+              </tr>
+              <tr>
+                <td>Laptop</td>
+                <td>Computers</td>
+                <td>2</td>
+                <td>$899.00</td>
+              </tr>
+              <tr>
+                <td>Wireless Mouse</td>
+                <td>Accessories</td>
+                <td>15</td>
+                <td>$25.50</td>
 
-      <table
-        class="min-w-full border border-gray-300 rounded-lg overflow-hidden mt-8"
-      >
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
-              Product Name
-            </th>
-            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
-              Category
-            </th>
-            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
-              Quantity
-            </th>
-            <th class="border px-6 py-3 text-left text-gray-700 font-semibold">
-              Price
-            </th>
-          </tr>
-        </thead>
 
-        <tbody class="bg-white">
-          <tr class="hover:bg-gray-50">
-            <td class="border px-6 py-3">Television</td>
-            <td class="border px-6 py-3">Electronics</td>
-            <td class="border px-6 py-3">4</td>
-            <td class="border px-6 py-3">$456.00</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border px-6 py-3">USB-C Cable</td>
-            <td class="border px-6 py-3">Accessories</td>
-            <td class="border px-6 py-3">8</td>
-            <td class="border px-6 py-3">$12.99</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border px-6 py-3">Gaming Chair</td>
-            <td class="border px-6 py-3">Furniture</td>
-            <td class="border px-6 py-3">67</td>
-            <td class="border px-6 py-3">$49.99</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border px-6 py-3">Monitor 65"</td>
-            <td class="border px-6 py-3">Electronics</td>
-            <td class="border px-6 py-3">5</td>
-            <td class="border px-6 py-3">$33.45</td>
-          </tr>
-        </tbody>
-      </table>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
   </body>
 </html>
