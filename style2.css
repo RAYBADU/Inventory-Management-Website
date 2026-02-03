@@ -131,6 +131,7 @@ body {
   width: 100%;
   max-width: 24rem;
   outline: none;
+  margin-top:15px
 }
 
 .user {
@@ -154,6 +155,82 @@ body {
 .subtitle {
   margin-top: 1rem;
   color: #6b7280;
+}
+
+/* PRODUCTS GRID */
+.product-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card h3 {
+  padding: 0.9rem 1rem 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.product-card p {
+  padding: 0 1rem 0.75rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.product-meta {
+  padding: 0 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.price {
+  font-weight: 700;
+  color: #111827;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+}
+
+.in-stock {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.low-stock {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.out-stock {
+  background: #fee2e2;
+  color: #991b1b;
 }
 
 /* STATS */
@@ -250,5 +327,9 @@ tbody tr:hover {
 
   .title {
     font-size: 1.75rem;
+  }
+
+  .product-card img {
+    height: 150px;
   }
 }

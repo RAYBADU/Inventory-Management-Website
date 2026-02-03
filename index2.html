@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+
+    <title>Inventory Management Website</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
+      <hr />
+
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="index2.html"
+            ><i class="fa-solid fa-box-open"></i>Products</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-users"></i>Suppliers</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-chart-line"></i>Reports</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-file"></i>Documents</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- MOBILE NAV -->
+      <nav class="mobile-nav">
+        <h3><i class="fa-solid fa-box-archive"></i> InventoryPro</h3>
+        <div class="mobile-links">
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index2.html"
+            ><i class="fa-solid fa-box-open"></i>Products</a
+          >
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
+          <a href="#"><i class="fa-solid fa-users"></i>Suppliers</a>
+          <a href="#"><i class="fa-solid fa-chart-line"></i>Reports</a>
+          <a href="#"><i class="fa-solid fa-file"></i>Documents</a>
+        </div>
+      </nav>
+
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <input class="search" placeholder="Search Inventory..." />
+
+        <div class="user">
+          <i class="fa-regular fa-bell"></i>
+          <img src="user.jpg" />
+          <div>
+            <strong>Raymond</strong>
+            <p style="font-size: 0.85rem; color: gray">Admin</p>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="title">Products</h1>
+      <p class="subtitle">
+        Manage and organize your entire product catalog
+      </p>
+
+      <input class="search" placeholder="Search products..." />
+
+      <!-- product images -->
+      <section class="product-grid">
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop"
+            alt="Laptop Pro 14"
+          />
+          <h3>Laptop Pro 14</h3>
+          <p>High-performance laptop for creators and teams.</p>
+          <div class="product-meta">
+            <span class="price">$1,299</span>
+            <span class="badge in-stock">In Stock</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
+            alt="Studio Headphones"
+          />
+          <h3>Studio Headphones</h3>
+          <p>Noise isolation with rich, balanced audio.</p>
+          <div class="product-meta">
+            <span class="price">$199</span>
+            <span class="badge low-stock">Low Stock</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop"
+            alt="Smart Watch"
+          />
+          <h3>Smart Watch</h3>
+          <p>Health tracking, GPS, and all-day battery.</p>
+          <div class="product-meta">
+            <span class="price">$249</span>
+            <span class="badge in-stock">In Stock</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=800&auto=format&fit=crop"
+            alt="4K Monitor"
+          />
+          <h3>4K Monitor</h3>
+          <p>Ultra-sharp display with vivid color accuracy.</p>
+          <div class="product-meta">
+            <span class="price">$429</span>
+            <span class="badge in-stock">In Stock</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1518544801976-3e159e50e5bb?q=80&w=800&auto=format&fit=crop"
+            alt="Wireless Mouse"
+          />
+          <h3>Wireless Mouse</h3>
+          <p>Ergonomic comfort with precision tracking.</p>
+          <div class="product-meta">
+            <span class="price">$39</span>
+            <span class="badge in-stock">In Stock</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800&auto=format&fit=crop"
+            alt="Camera Pro Kit"
+          />
+          <h3>Camera Pro Kit</h3>
+          <p>Capture crisp images with versatile lenses.</p>
+          <div class="product-meta">
+            <span class="price">$899</span>
+            <span class="badge low-stock">Low Stock</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop"
+            alt="Fitness Tracker"
+          />
+          <h3>Fitness Tracker</h3>
+          <p>Lightweight tracker with heart-rate monitor.</p>
+          <div class="product-meta">
+            <span class="price">$79</span>
+            <span class="badge in-stock">In Stock</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop"
+            alt="Mechanical Keyboard"
+          />
+          <h3>Mechanical Keyboard</h3>
+          <p>Tactile switches and customizable backlight.</p>
+          <div class="product-meta">
+            <span class="price">$129</span>
+            <span class="badge out-stock">Out of Stock</span>
+          </div>
+        </article>
+      </section>
+          
+    </main>
+  </body>
+</html>
