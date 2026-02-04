@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style3.css" />
+
+    <title>InventoryPro Orders</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
+      <hr />
+
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="index2.html"><i class="fa-solid fa-box-open"></i>Products</a>
+        </li>
+        <li class="active">
+          <a class="active-link" href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+        </li>
+        <li>
+          <a href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+        </li>
+        <li>
+          <a href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+        </li>
+        <li>
+          <a href="documents.html"><i class="fa-solid fa-file"></i>Documents</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- MOBILE NAV -->
+      <nav class="mobile-nav">
+        <h3><i class="fa-solid fa-box-archive"></i> InventoryPro</h3>
+        <div class="mobile-links">
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index2.html"><i class="fa-solid fa-box-open"></i>Products</a>
+          <a href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+          <a href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+          <a href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+          <a href="documents.html"><i class="fa-solid fa-file"></i>Documents</a>
+        </div>
+      </nav>
+
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <input class="search" placeholder="Search orders..." />
+
+        <div class="user">
+          <i class="fa-regular fa-bell"></i>
+          <img src="user.jpg" />
+          <div>
+            <strong>Raymond</strong>
+            <p class="user-role">Admin</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <div>
+          <h1 class="title">Orders</h1>
+          <p class="subtitle">Track fulfillment, payments, and delivery.</p>
+        </div>
+        <button class="primary-btn">
+          <i class="fa-solid fa-plus"></i> New Order
+        </button>
+      </div>
+
+      <section class="filters">
+        <div class="filter-group">
+          <span class="filter-label">Status</span>
+          <button class="pill active">All</button>
+          <button class="pill">Processing</button>
+          <button class="pill">Shipped</button>
+          <button class="pill">Delivered</button>
+          <button class="pill">Returned</button>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Window</span>
+          <button class="pill">Today</button>
+          <button class="pill active">This Week</button>
+          <button class="pill">This Month</button>
+        </div>
+      </section>
+
+      <section class="stats">
+        <article class="stat-card">
+          <div class="stat-head">
+            <span>Total Orders</span>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <h2>1,284</h2>
+          <p class="stat-trend up">+8.2% vs last week</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-head">
+            <span>Processing</span>
+            <i class="fa-solid fa-hourglass-half"></i>
+          </div>
+          <h2>146</h2>
+          <p class="stat-trend neutral">42 due today</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-head">
+            <span>Delivered</span>
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h2>932</h2>
+          <p class="stat-trend up">95% on-time</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-head">
+            <span>Revenue</span>
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h2>$82,490</h2>
+          <p class="stat-trend down">-2.1% refunds</p>
+        </article>
+      </section>
+
+      <section class="orders-grid">
+        <article class="order-card">
+          <div class="order-head">
+            <div>
+              <p class="order-id">#INV-40129</p>
+              <h3>Marissa Wade</h3>
+            </div>
+            <span class="badge processing">Processing</span>
+          </div>
+          <div class="order-body">
+            <p>3 items · Express</p>
+            <p>ETA: Feb 6</p>
+          </div>
+          <div class="order-meta">
+            <span>$428.00</span>
+            <button class="ghost-btn">View</button>
+          </div>
+        </article>
+
+        <article class="order-card">
+          <div class="order-head">
+            <div>
+              <p class="order-id">#INV-40118</p>
+              <h3>Daniel Kurt</h3>
+            </div>
+            <span class="badge shipped">Shipped</span>
+          </div>
+          <div class="order-body">
+            <p>1 item · Standard</p>
+            <p>Carrier: FedEx</p>
+          </div>
+          <div class="order-meta">
+            <span>$129.00</span>
+            <button class="ghost-btn">View</button>
+          </div>
+        </article>
+
+        <article class="order-card">
+          <div class="order-head">
+            <div>
+              <p class="order-id">#INV-40097</p>
+              <h3>Sharon Lee</h3>
+            </div>
+            <span class="badge delivered">Delivered</span>
+          </div>
+          <div class="order-body">
+            <p>5 items · Priority</p>
+            <p>Signed by: Concierge</p>
+          </div>
+          <div class="order-meta">
+            <span>$1,204.00</span>
+            <button class="ghost-btn">View</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="table-section">
+        <div class="section-head">
+          <h2>Recent Orders</h2>
+          <button class="ghost-btn">Export CSV</button>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Items</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Last Update</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#INV-40131</td>
+                <td>Andre Flores</td>
+                <td>2</td>
+                <td>$229.00</td>
+                <td><span class="badge processing">Processing</span></td>
+                <td>Today, 09:12</td>
+              </tr>
+              <tr>
+                <td>#INV-40126</td>
+                <td>Priya Shah</td>
+                <td>4</td>
+                <td>$684.00</td>
+                <td><span class="badge shipped">Shipped</span></td>
+                <td>Yesterday, 18:30</td>
+              </tr>
+              <tr>
+                <td>#INV-40119</td>
+                <td>Luis Ramos</td>
+                <td>1</td>
+                <td>$89.00</td>
+                <td><span class="badge delivered">Delivered</span></td>
+                <td>Yesterday, 12:04</td>
+              </tr>
+              <tr>
+                <td>#INV-40105</td>
+                <td>Sana Ali</td>
+                <td>6</td>
+                <td>$1,102.00</td>
+                <td><span class="badge returned">Returned</span></td>
+                <td>Jan 30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style3.css" />
+
+    <title>InventoryPro Suppliers</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
+      <hr />
+
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="index2.html"><i class="fa-solid fa-box-open"></i>Products</a>
+        </li>
+        <li>
+          <a href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+        </li>
+        <li class="active">
+          <a class="active-link" href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+        </li>
+        <li>
+          <a href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+        </li>
+        <li>
+          <a href="documents.html"><i class="fa-solid fa-file"></i>Documents</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- MOBILE NAV -->
+      <nav class="mobile-nav">
+        <h3><i class="fa-solid fa-box-archive"></i> InventoryPro</h3>
+        <div class="mobile-links">
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index2.html"><i class="fa-solid fa-box-open"></i>Products</a>
+          <a href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+          <a href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+          <a href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+          <a href="documents.html"><i class="fa-solid fa-file"></i>Documents</a>
+        </div>
+      </nav>
+
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <input class="search" placeholder="Search suppliers..." />
+
+        <div class="user">
+          <i class="fa-regular fa-bell"></i>
+          <img src="user.jpg" />
+          <div>
+            <strong>Raymond</strong>
+            <p class="user-role">Admin</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <div>
+          <h1 class="title">Suppliers</h1>
+          <p class="subtitle">Manage vendors, contracts, and lead times.</p>
+        </div>
+        <button class="primary-btn">
+          <i class="fa-solid fa-plus"></i> Add Supplier
+        </button>
+      </div>
+
+      <section class="table-section">
+        <div class="section-head">
+          <h2>Active Vendors</h2>
+          <button class="ghost-btn">Download</button>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Supplier</th>
+                <th>Category</th>
+                <th>Lead Time</th>
+                <th>Rating</th>
+                <th>Last Order</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Northwind Gear</td>
+                <td>Electronics</td>
+                <td>5 days</td>
+                <td>4.8</td>
+                <td>Feb 2</td>
+              </tr>
+              <tr>
+                <td>Summit Audio Co.</td>
+                <td>Audio</td>
+                <td>7 days</td>
+                <td>4.6</td>
+                <td>Jan 30</td>
+              </tr>
+              <tr>
+                <td>Orion Displays</td>
+                <td>Monitors</td>
+                <td>4 days</td>
+                <td>4.9</td>
+                <td>Jan 28</td>
+              </tr>
+              <tr>
+                <td>Vista Logistics</td>
+                <td>Shipping</td>
+                <td>2 days</td>
+                <td>4.4</td>
+                <td>Jan 26</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Supplier Intake Form</h2>
+        <p class="subtitle">Add a new vendor with contact preferences.</p>
+        <form class="supplier-form">
+          <div class="form-row">
+            <label>
+              Company Name
+              <input type="text" name="company" placeholder="Northwind Gear" />
+            </label>
+            <label>
+              Contact Email
+              <input
+                type="text"
+                name="email"
+                placeholder="contact@vendor.com"
+              />
+            </label>
+          </div>
+
+          <fieldset class="form-group">
+            <legend>Preferred Contact Method</legend>
+            <label class="inline-option">
+              <input type="radio" name="contact" value="email" checked />
+              Email
+            </label>
+            <label class="inline-option">
+              <input type="radio" name="contact" value="phone" />
+              Phone
+            </label>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Categories Supplied</legend>
+            <label class="inline-option">
+              <input type="checkbox" name="category" value="electronics" />
+              Electronics
+            </label>
+            <label class="inline-option">
+              <input type="checkbox" name="category" value="accessories" />
+              Accessories
+            </label>
+          </fieldset>
+
+          <button class="primary-btn" type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Submit
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

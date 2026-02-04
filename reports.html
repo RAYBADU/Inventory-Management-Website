@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style3.css" />
+
+    <title>InventoryPro Reports</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
+      <hr />
+
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="index2.html"
+            ><i class="fa-solid fa-box-open"></i>Products</a
+          >
+        </li>
+        <li>
+          <a href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+        </li>
+        <li>
+          <a href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+        </li>
+        <li class="active">
+          <a class="active-link" href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+        </li>
+        <li>
+          <a href="documents.html"
+            ><i class="fa-solid fa-file"></i>Documents</a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- MOBILE NAV -->
+      <nav class="mobile-nav">
+        <h3><i class="fa-solid fa-box-archive"></i> InventoryPro</h3>
+        <div class="mobile-links">
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index2.html"
+            ><i class="fa-solid fa-box-open"></i>Products</a
+          >
+          <a href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+          <a href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+          <a href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+          <a href="documents.html"
+            ><i class="fa-solid fa-file"></i>Documents</a
+          >
+        </div>
+      </nav>
+
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <input class="search" placeholder="Search reports..." />
+
+        <div class="user">
+          <i class="fa-regular fa-bell"></i>
+          <img src="user.jpg" />
+          <div>
+            <strong>Raymond</strong>
+            <p class="user-role">Admin</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <div>
+          <h1 class="title">Reports</h1>
+          <p class="subtitle">Track performance across inventory and sales.</p>
+        </div>
+        <button class="primary-btn">
+          <i class="fa-solid fa-chart-line"></i> Generate Report
+        </button>
+      </div>
+
+      <section class="table-section">
+        <div class="section-head">
+          <h2>Saved Reports</h2>
+          <button class="ghost-btn">New Template</button>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Report</th>
+                <th>Owner</th>
+                <th>Range</th>
+                <th>Last Run</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Weekly Sales Pulse</td>
+                <td>Analytics Team</td>
+                <td>Jan 29 - Feb 4</td>
+                <td>Today, 08:10</td>
+                <td><span class="badge delivered">Ready</span></td>
+              </tr>
+              <tr>
+                <td>Inventory Risk Scan</td>
+                <td>Ops</td>
+                <td>Jan 1 - Feb 4</td>
+                <td>Yesterday, 16:45</td>
+                <td><span class="badge processing">Running</span></td>
+              </tr>
+              <tr>
+                <td>Top Products</td>
+                <td>Sales</td>
+                <td>Q4 2025</td>
+                <td>Jan 31, 11:22</td>
+                <td><span class="badge shipped">Shared</span></td>
+              </tr>
+              <tr>
+                <td>Supplier SLA Review</td>
+                <td>Procurement</td>
+                <td>Jan 2026</td>
+                <td>Jan 30, 09:10</td>
+                <td><span class="badge delivered">Ready</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

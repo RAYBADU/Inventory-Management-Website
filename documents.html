@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style3.css" />
+
+    <title>InventoryPro Documents</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
+      <hr />
+
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="index2.html"
+            ><i class="fa-solid fa-box-open"></i>Products</a
+          >
+        </li>
+        <li>
+          <a href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+        </li>
+        <li>
+          <a href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+        </li>
+        <li>
+          <a href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+        </li>
+        <li class="active">
+          <a class="active-link" href="documents.html"
+            ><i class="fa-solid fa-file"></i>Documents</a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- MOBILE NAV -->
+      <nav class="mobile-nav">
+        <h3><i class="fa-solid fa-box-archive"></i> InventoryPro</h3>
+        <div class="mobile-links">
+          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index2.html"
+            ><i class="fa-solid fa-box-open"></i>Products</a
+          >
+          <a href="index3.html"
+            ><i class="fa-solid fa-cart-shopping"></i>Orders</a
+          >
+          <a href="suppliers.html"
+            ><i class="fa-solid fa-users"></i>Suppliers</a
+          >
+          <a href="reports.html"
+            ><i class="fa-solid fa-chart-line"></i>Reports</a
+          >
+          <a href="documents.html"
+            ><i class="fa-solid fa-file"></i>Documents</a
+          >
+        </div>
+      </nav>
+
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <input class="search" placeholder="Search documents..." />
+
+        <div class="user">
+          <i class="fa-regular fa-bell"></i>
+          <img src="user.jpg" />
+          <div>
+            <strong>Raymond</strong>
+            <p class="user-role">Admin</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <div>
+          <h1 class="title">Documents</h1>
+          <p class="subtitle">Centralized contracts, manuals, and SOPs.</p>
+        </div>
+        <button class="primary-btn">
+          <i class="fa-solid fa-upload"></i> Upload
+        </button>
+      </div>
+
+      <section class="table-section">
+        <div class="section-head">
+          <h2>Recent Files</h2>
+          <button class="ghost-btn">Create Folder</button>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Document</th>
+                <th>Owner</th>
+                <th>Type</th>
+                <th>Last Edited</th>
+                <th>Access</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Warehouse SOP</td>
+                <td>Ops Team</td>
+                <td>PDF</td>
+                <td>Today, 10:05</td>
+                <td><span class="badge delivered">Shared</span></td>
+              </tr>
+              <tr>
+                <td>Supplier Contract 2026</td>
+                <td>Legal</td>
+                <td>DOCX</td>
+                <td>Yesterday, 15:40</td>
+                <td><span class="badge shipped">Restricted</span></td>
+              </tr>
+              <tr>
+                <td>Returns Policy</td>
+                <td>Support</td>
+                <td>PDF</td>
+                <td>Jan 31, 13:12</td>
+                <td><span class="badge delivered">Shared</span></td>
+              </tr>
+              <tr>
+                <td>Brand Assets</td>
+                <td>Marketing</td>
+                <td>ZIP</td>
+                <td>Jan 29, 09:20</td>
+                <td><span class="badge processing">Internal</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
