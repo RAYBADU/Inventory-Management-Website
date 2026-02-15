@@ -11,7 +11,7 @@ body {
   display: flex;
   background-color: white;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 img {
@@ -83,7 +83,7 @@ a:hover {
   margin-left: 15rem;
   padding: 2rem 1.5rem 1.5rem;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 /* MOBILE NAV */
@@ -320,13 +320,20 @@ a:hover {
 }
 
 .table-wrapper {
-  overflow-x: hidden;
+  overflow-x: auto;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 table {
   width: 100%;
-  table-layout: fixed;
+  min-width: 620px;
   border-collapse: collapse;
   border: 1px solid #d1d5db;
   border-radius: 10px;
@@ -369,7 +376,12 @@ tbody tr:hover {
   }
 
   .title {
-    font-size: 1.75rem;
+    font-size: 1.45rem;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+    line-height: 1.2;
   }
 
   .top-bar {
@@ -404,11 +416,12 @@ tbody tr:hover {
   td {
     padding: 0.6rem 0.85rem;
     font-size: 0.82rem;
-    white-space: normal;
-    word-break: break-word;
+    white-space: nowrap;
+
   }
 
   .promo-image {
     height: clamp(160px, 42vw, 220px);
   }
 }
+

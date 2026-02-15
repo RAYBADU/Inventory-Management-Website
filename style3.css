@@ -24,7 +24,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 img {
@@ -110,7 +110,7 @@ a:hover {
     var(--paper);
   min-height: 100vh;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .main::before {
@@ -509,16 +509,23 @@ a:hover {
 }
 
 .table-wrapper {
-  overflow-x: hidden;
+  overflow-x: auto;
   background: var(--panel);
   border-radius: 16px;
   box-shadow: var(--shadow);
   width: 100%;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 table {
   width: 100%;
-  table-layout: fixed;
+  min-width: 640px;
   border-collapse: collapse;
   border: 1px solid #e5e7eb;
 }
@@ -821,7 +828,12 @@ tbody tr:hover {
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.45rem;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+    line-height: 1.2;
   }
 
   .top-bar {
@@ -851,7 +863,8 @@ tbody tr:hover {
   td {
     padding: 0.6rem 0.85rem;
     font-size: 0.82rem;
-    white-space: normal;
-    word-break: break-word;
+    white-space: nowrap;
+
   }
 }
+
