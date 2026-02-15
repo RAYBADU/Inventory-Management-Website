@@ -10,6 +10,8 @@
 body {
   display: flex;
   background-color: white;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -49,10 +51,19 @@ a:hover {
 .sidebar ul {
   margin-top: 2rem;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
+
+
+
+
+
+
 .sidebar li {
-  padding: 1.5rem;
+  padding: 1.2rem;
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
@@ -78,6 +89,8 @@ a:hover {
   flex: 1;
   margin-left: 15rem;
   padding: 2rem 1.5rem 1.5rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* MOBILE NAV */
@@ -170,6 +183,43 @@ a:hover {
 .subtitle {
   margin-top: 1rem;
   color: #6b7280;
+}
+
+.quick-link-card {
+  margin-top: 1.2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef2ff 100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.quick-link-card p {
+  color: #334155;
+  font-weight: 600;
+}
+
+.quick-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #111827;
+  color: #ffffff;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.quick-link-btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  filter: brightness(1.08);
 }
 
 /* MEDIA SHOWCASE */
@@ -317,11 +367,13 @@ a:hover {
 }
 
 .table-wrapper {
-  overflow-x: auto;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   border: 1px solid #d1d5db;
   border-radius: 10px;
@@ -350,15 +402,57 @@ tbody tr:hover {
 
   .mobile-nav {
     display: flex;
+    height: auto;
+    min-height: 5.2rem;
+    padding: 0.8rem 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.55rem;
   }
 
   .main {
     margin-left: 0;
-    padding-top: 6rem;
+    padding: 7rem 0.9rem 1rem;
   }
 
   .title {
     font-size: 1.75rem;
+  }
+
+  .top-bar {
+    padding: 0.8rem;
+  }
+
+  .search {
+    max-width: none;
+    width: 100%;
+  }
+
+  .stats {
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  }
+
+  .mobile-links {
+    width: 100%;
+    padding-left: 0;
+    gap: 0.6rem;
+  }
+
+  .mobile-links a {
+    font-size: 0.78rem;
+  }
+
+  th,
+  td {
+    padding: 0.6rem 0.85rem;
+    font-size: 0.82rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .quick-link-btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .layout-table,

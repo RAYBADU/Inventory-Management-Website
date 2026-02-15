@@ -13,7 +13,7 @@
     <title>InventoryPro Reports</title>
   </head>
 
-  <body>
+  <body class="reports-page">
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
@@ -21,7 +21,7 @@
 
       <ul>
         <li>
-          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
         </li>
         <li>
           <a href="index2.html"
@@ -43,11 +43,7 @@
             ><i class="fa-solid fa-chart-line"></i>Reports</a
           >
         </li>
-        <li>
-          <a href="documents.html"
-            ><i class="fa-solid fa-file"></i>Documents</a
-          >
-        </li>
+        
       </ul>
     </aside>
 
@@ -57,7 +53,7 @@
       <nav class="mobile-nav">
         <h3><i class="fa-solid fa-box-archive"></i> InventoryPro</h3>
         <div class="mobile-links">
-          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
           <a href="index2.html"
             ><i class="fa-solid fa-box-open"></i>Products</a
           >
@@ -70,9 +66,7 @@
           <a href="reports.html"
             ><i class="fa-solid fa-chart-line"></i>Reports</a
           >
-          <a href="documents.html"
-            ><i class="fa-solid fa-file"></i>Documents</a
-          >
+         
         </div>
       </nav>
 
@@ -106,44 +100,56 @@
           <button class="ghost-btn">New Template</button>
         </div>
         <div class="table-wrapper">
-          <table>
+          <table class="reports-table">
             <thead>
               <tr>
-                <th>Report</th>
-                <th>Owner</th>
-                <th>Range</th>
-                <th>Last Run</th>
-                <th>Status</th>
+                <th>Product Name</th>
+                <th>Daily</th>
+                <th>Weekly</th>
+                <th>Monthly</th>
+                <th>Quantity Left</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Weekly Sales Pulse</td>
-                <td>Analytics Team</td>
-                <td>Jan 29 - Feb 4</td>
-                <td>Today, 08:10</td>
-                <td><span class="badge delivered">Ready</span></td>
+                <td class="product-col">
+                  <i class="fa-solid fa-laptop"></i>
+                  <span>Laptop Pro 14</span>
+                </td>
+                <td>12</td>
+                <td>76</td>
+                <td>298</td>
+                <td><span class="stock-pill stock-high">34</span></td>
               </tr>
               <tr>
-                <td>Inventory Risk Scan</td>
-                <td>Ops</td>
-                <td>Jan 1 - Feb 4</td>
-                <td>Yesterday, 16:45</td>
-                <td><span class="badge processing">Running</span></td>
+                <td class="product-col">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span>Studio Headphones</span>
+                </td>
+                <td>19</td>
+                <td>113</td>
+                <td>452</td>
+                <td><span class="stock-pill stock-mid">16</span></td>
               </tr>
               <tr>
-                <td>Top Products</td>
-                <td>Sales</td>
-                <td>Q4 2025</td>
-                <td>Jan 31, 11:22</td>
-                <td><span class="badge shipped">Shared</span></td>
+                <td class="product-col">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Smart Watch</span>
+                </td>
+                <td>15</td>
+                <td>97</td>
+                <td>386</td>
+                <td><span class="stock-pill stock-high">42</span></td>
               </tr>
               <tr>
-                <td>Supplier SLA Review</td>
-                <td>Procurement</td>
-                <td>Jan 2026</td>
-                <td>Jan 30, 09:10</td>
-                <td><span class="badge delivered">Ready</span></td>
+                <td class="product-col">
+                  <i class="fa-solid fa-keyboard"></i>
+                  <span>Mechanical Keyboard</span>
+                </td>
+                <td>9</td>
+                <td>61</td>
+                <td>244</td>
+                <td><span class="stock-pill stock-empty">0</span></td>
               </tr>
             </tbody>
           </table>

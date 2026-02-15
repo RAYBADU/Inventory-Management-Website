@@ -13,7 +13,7 @@
     <title>InventoryPro Suppliers</title>
   </head>
 
-  <body>
+  <body class="suppliers-page">
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <h1><i class="fa-solid fa-box-archive"></i>InventoryPro</h1>
@@ -21,7 +21,7 @@
 
       <ul>
         <li>
-          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
         </li>
         <li>
           <a href="index2.html"><i class="fa-solid fa-box-open"></i>Products</a>
@@ -41,9 +41,7 @@
             ><i class="fa-solid fa-chart-line"></i>Reports</a
           >
         </li>
-        <li>
-          <a href="documents.html"><i class="fa-solid fa-file"></i>Documents</a>
-        </li>
+        
       </ul>
     </aside>
 
@@ -53,7 +51,7 @@
       <nav class="mobile-nav">
         <h3><i class="fa-solid fa-box-archive"></i> InventoryPro</h3>
         <div class="mobile-links">
-          <a href="index.html"><i class="fa-solid fa-grip"></i>Dashboard</a>
+          <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
           <a href="index2.html"><i class="fa-solid fa-box-open"></i>Products</a>
           <a href="index3.html"
             ><i class="fa-solid fa-cart-shopping"></i>Orders</a
@@ -64,7 +62,7 @@
           <a href="reports.html"
             ><i class="fa-solid fa-chart-line"></i>Reports</a
           >
-          <a href="documents.html"><i class="fa-solid fa-file"></i>Documents</a>
+         
         </div>
       </nav>
 
@@ -98,47 +96,47 @@
           <button class="ghost-btn">Download</button>
         </div>
         <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Supplier</th>
-                <th>Category</th>
-                <th>Lead Time</th>
-                <th>Rating</th>
-                <th>Last Order</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Northwind Gear</td>
-                <td>Electronics</td>
-                <td>5 days</td>
-                <td>4.8</td>
-                <td>Feb 2</td>
-              </tr>
-              <tr>
-                <td>Summit Audio Co.</td>
-                <td>Audio</td>
-                <td>7 days</td>
-                <td>4.6</td>
-                <td>Jan 30</td>
-              </tr>
-              <tr>
-                <td>Orion Displays</td>
-                <td>Monitors</td>
-                <td>4 days</td>
-                <td>4.9</td>
-                <td>Jan 28</td>
-              </tr>
-              <tr>
-                <td>Vista Logistics</td>
-                <td>Shipping</td>
-                <td>2 days</td>
-                <td>4.4</td>
-                <td>Jan 26</td>
-              </tr>
-            </tbody>
-          </table>
+        <table>
+  <thead>
+    <tr>
+      <th>Supplier</th>
+      <th>Product Type</th>
+      <th>Delivery Window</th>
+      <th> Rating</th>
+      <th>Last Order</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Franko Trading Enterprise</td>
+      <td>Electronics</td>
+      <td>5 days</td>
+      <td><i class="fa-solid fa-star fa-fade" style="color: rgba(255, 212, 59, 1);"></i> 4.8</td>
+      <td>Feb 2</td>
+    </tr>
+    <tr>
+      <td>Oraimo</td>
+      <td>Audio</td>
+      <td>7 days</td>
+      <td><i class="fa-solid fa-star fa-fade" style="color: rgba(255, 212, 59, 1);"></i> 4.6</td>
+      <td>Jan 30</td>
+    </tr>
+    <tr>
+      <td>Jumia</td>
+      <td>Monitors</td>
+      <td>4 days</td>
+      <td><i class="fa-solid fa-star fa-fade" style="color: rgba(255, 212, 59, 1);"></i> 4.9</td>
+      <td>Jan 28</td>
+    </tr>
+    <tr>
+      <td>Baj Freight</td>
+      <td>Shipping</td>
+      <td>2 days</td>
+      <td><i class="fa-solid fa-star fa-fade" style="color: rgba(255, 212, 59, 1);"></i> 4.4</td>
+      <td>Jan 26</td>
+    </tr>
+  </tbody>
+</table>
         </div>
       </section>
 
@@ -149,45 +147,70 @@
           <div class="form-row">
             <label>
               Company Name
-              <input type="text" name="company" placeholder="Northwind Gear" />
+              <span class="input-shell">
+                <i class="fa-solid fa-building"></i>
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Samsung Electronics"
+                />
+              </span>
             </label>
             <label>
               Contact Email
-              <input
-                type="text"
-                name="email"
-                placeholder="contact@vendor.com"
-              />
+              <span class="input-shell">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="contact@samsung.com"
+                />
+              </span>
             </label>
           </div>
 
           <fieldset class="form-group">
             <legend>Preferred Contact Method</legend>
-            <label class="inline-option">
-              <input type="radio" name="contact" value="email" checked />
-              Email
-            </label>
-            <label class="inline-option">
-              <input type="radio" name="contact" value="phone" />
-              Phone
-            </label>
+            <div class="option-grid">
+              <label class="inline-option">
+                <input type="radio" name="contact" value="email" checked />
+                <span><i class="fa-solid fa-envelope"></i> Email</span>
+              </label>
+              <label class="inline-option">
+                <input type="radio" name="contact" value="phone" />
+                <span><i class="fa-solid fa-phone"></i> Phone</span>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form-group">
             <legend>Categories Supplied</legend>
-            <label class="inline-option">
-              <input type="checkbox" name="category" value="electronics" />
-              Electronics
-            </label>
-            <label class="inline-option">
-              <input type="checkbox" name="category" value="accessories" />
-              Accessories
-            </label>
+            <div class="option-grid">
+              <label class="inline-option">
+                <input type="checkbox" name="category" value="electronics" />
+                <span><i class="fa-solid fa-microchip"></i> Electronics</span>
+              </label>
+              <label class="inline-option">
+                <input type="checkbox" name="category" value="accessories" />
+                <span><i class="fa-solid fa-plug-circle-bolt"></i> Accessories</span>
+              </label>
+              <label class="inline-option">
+                <input type="checkbox" name="category" value="shipping" />
+                <span><i class="fa-solid fa-truck-fast"></i> Shipping</span>
+              </label>
+              <label class="inline-option">
+                <input type="checkbox" name="category" value="packaging" />
+                <span><i class="fa-solid fa-box"></i> Packaging</span>
+              </label>
+            </div>
           </fieldset>
 
-          <button class="primary-btn" type="submit">
-            <i class="fa-solid fa-paper-plane"></i> Submit
-          </button>
+          <div class="form-actions">
+            <button class="ghost-btn" type="reset">Reset</button>
+            <button class="primary-btn" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Submit Supplier
+            </button>
+          </div>
         </form>
       </section>
     </main>
